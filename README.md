@@ -3,7 +3,7 @@
 ## For those stumbling here:
 This is a presonal project in which I program a minimal HTTP server. It is only intended to be educational.
 
-## Objective:
+## Objectives:
 
 ### A - Answering a single get request
 
