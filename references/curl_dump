@@ -1,0 +1,24 @@
+10:47:57.810416 IP6 (flowlabel 0xfa4d3, hlim 64, next-header TCP (6) payload length: 40) localhost.42388 > localhost.http: Flags [S], cksum 0x0030 (incorrect -> 0x23a5), seq 3961490873, win 65476, options [mss 65476,sackOK,TS val 3049542913 ecr 0,nop,wscale 7], length 0
+10:47:57.810426 IP6 (flowlabel 0x39c1e, hlim 64, next-header TCP (6) payload length: 20) localhost.http > localhost.42388: Flags [R.], cksum 0x001c (incorrect -> 0x9010), seq 0, ack 3961490874, win 0, length 0
+10:47:57.810471 IP (tos 0x0, ttl 64, id 33757, offset 0, flags [DF], proto TCP (6), length 60)
+    localhost.35520 > localhost.http: Flags [S], cksum 0xfe30 (incorrect -> 0xddc8), seq 4063750957, win 65495, options [mss 65495,sackOK,TS val 2618060214 ecr 0,nop,wscale 7], length 0
+10:47:57.810480 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    localhost.http > localhost.35520: Flags [S.], cksum 0xfe30 (incorrect -> 0x70d3), seq 2088232629, ack 4063750958, win 65483, options [mss 65495,sackOK,TS val 2618060214 ecr 2618060214,nop,wscale 7], length 0
+10:47:57.810488 IP (tos 0x0, ttl 64, id 33758, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.35520 > localhost.http: Flags [.], cksum 0xfe28 (incorrect -> 0x978f), seq 1, ack 1, win 512, options [nop,nop,TS val 2618060214 ecr 2618060214], length 0
+10:47:57.810517 IP (tos 0x0, ttl 64, id 33759, offset 0, flags [DF], proto TCP (6), length 125)
+    localhost.35520 > localhost.http: Flags [P.], cksum 0xfe71 (incorrect -> 0x46a9), seq 1:74, ack 1, win 512, options [nop,nop,TS val 2618060214 ecr 2618060214], length 73: HTTP, length: 73
+	GET / HTTP/1.1
+	Host: localhost
+	User-Agent: curl/8.14.0
+	Accept: */*
+	
+10:47:57.810522 IP (tos 0x0, ttl 64, id 55173, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.http > localhost.35520: Flags [.], cksum 0xfe28 (incorrect -> 0x9746), seq 1, ack 74, win 512, options [nop,nop,TS val 2618060214 ecr 2618060214], length 0
+10:47:57.810751 IP (tos 0x0, ttl 64, id 55174, offset 0, flags [DF], proto TCP (6), length 65)
+    localhost.http > localhost.35520: Flags [P.], cksum 0xfe35 (incorrect -> 0x55e5), seq 1:14, ack 74, win 512, options [nop,nop,TS val 2618060214 ecr 2618060214], length 13: HTTP
+10:47:57.810758 IP (tos 0x0, ttl 64, id 33760, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.35520 > localhost.http: Flags [.], cksum 0xfe28 (incorrect -> 0x9739), seq 74, ack 14, win 512, options [nop,nop,TS val 2618060214 ecr 2618060214], length 0
+10:47:57.810765 IP (tos 0x0, ttl 64, id 55175, offset 0, flags [DF], proto TCP (6), length 52)
+    localhost.http > localhost.35520: Flags [R.], cksum 0xfe28 (incorrect -> 0x9735), seq 14, ack 74, win 512, options [nop,nop,TS val 2618060214 ecr 2618060214], length 0
+
